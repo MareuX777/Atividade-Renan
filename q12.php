@@ -15,9 +15,7 @@
     <?php 
         if(isset($_GET['enviador'])) {
             $custo = $_GET['custo'];
-            $comImpostos = $custo + ($custo * 0.45);
-            $consumidor = $comImpostos + ($comImpostos * 0.28);
-            echo "Custo ao consumidor: $consumidor";
+            echo $custo * 1.45 * 1.28;
         }
     ?>
 </body>

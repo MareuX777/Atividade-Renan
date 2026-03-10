@@ -18,8 +18,7 @@
         if(isset($_GET['enviador'])) {
             $custo = $_GET['custo'];
             $percentual = $_GET['percentual'];
-            $venda = $custo + ($custo * $percentual / 100);
-            echo "Valor de venda: $venda";
+            echo $custo + ($custo * $percentual / 100);
         }
     ?>
 </body>
